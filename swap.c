@@ -8,15 +8,15 @@ void swap_max(int arr[], int l, int n)
   
 	for(int i=n; i<l; i++)
   {
-		if(arr[i] > largest)
+		if(arr[i] > large)
     {
-			largest = arr[i];
+			large = arr[i];
 			idx = i;
 		}
 	}
   
   int t = arr[n];
-	arr[n] = largest;
+	arr[n] = large;
 	arr[idx] = t;
 }
 
